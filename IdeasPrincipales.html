@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">Base de datos NTD 1er corte</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Página principal</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="FichaTecnica.html">Ficha técnica del artículo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">Conclusión del artículo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <h1><center>Ideas principales del artículo</center></h1>
+
+    <h2>Main ideas (English)</h2> <br>
+    <h3>1. Network Architectures in Video Games:</h3>
+    <p>The article describes the different network architectures used in multiplayer video games to facilitate real-time interaction among players. Three main approaches are highlighted: <br>
+        <strong>Deterministic Lockstep: </strong>This method ensures that all players progress in the game in a synchronized manner, which is crucial for maintaining the game's state consistency. However, it can be susceptible to performance issues if a player experiences latency or disconnections. <br>
+        <strong>Snapshot Interpolation: </strong>This approach allows clients to predict the state of the game based on previous data, which can enhance the player experience by reducing the perception of lag. However, it can also be exploited if a player manipulates input timings. <br>
+        <strong>State Synchronization: </strong>This method involves the server sending updates of the game state to all clients. While effective for maintaining consistency, it also presents security risks, as players may modify their clients to gain unauthorized information about the game state.</p>
+    
+    <h3>2. Exploitation of Vulnerabilities:</h3>
+    <p>The article delves into how network architectures can be vulnerable to exploits that allow players to gain unfair advantages. Two main types of exploits are discussed: <br>
+        <strong>Client-Side Exploits: </strong>Players can modify their clients to alter how game information is presented. For example, in games like "Starcraft II," players can remove the "fog of war" effect, allowing them to see the entire map and gain a strategic advantage. <br>
+        <strong>Timing Exploits: </strong>Players can manipulate the timing of their actions, allowing them to execute moves or attacks more effectively than the game should permit. This can be achieved by adjusting the client’s clock or modifying the timestamps of input updates, leading to undetected collisions and other synchronization issues.</p>
+    
+    <h3>3. Case Studies:</h3>
+    <p>The article presents three case studies that illustrate the discussed concepts: <br>
+        <strong>"Risk of Rain 2": </strong>This game demonstrated how the combination of procedurally generated effects can lead to unintended behavior that overwhelms game clients, affecting their performance. The lack of control over object generation can result in a significant degradation of the gaming experience. <br>
+        <strong>"Dead by Daylight": </strong>In this title, it was shown that players can manipulate access to client update messages to gain competitive advantages, such as evading attacks or moving in unauthorized ways within the game. <br>
+        <strong>"The Elder Scrolls Online": </strong>This case combined aspects from the previous two, showing how animation canceling techniques can drastically increase network traffic and lead to complaints about game performance, especially in situations with many concurrent players.</p>
+
+
+    <h2>Ideas principales (Español)</h2>
+    <h3>1. Arquitecturas de Red en Videojuegos:</h3>
+    <p>El artículo describe las diferentes arquitecturas de red que se utilizan en los videojuegos multijugador para facilitar la interacción en tiempo real entre los jugadores. Se destacan tres enfoques principales: <br>
+        <strong>Lockstep Determinista: </strong>Este método asegura que todos los jugadores avancen en el juego de manera sincronizada, lo que es crucial para mantener la coherencia del estado del juego. Sin embargo, puede ser susceptible a problemas de rendimiento si un jugador experimenta latencia o desconexiones. <br>
+        <strong>Interpolación de Instantáneas: </strong>Este enfoque permite a los clientes predecir el estado del juego basándose en datos anteriores, lo que puede mejorar la experiencia del jugador al reducir la percepción de lag. Sin embargo, también puede ser explotado si un jugador manipula los tiempos de entrada. <br>
+        <strong>Sincronización de Estado: </strong>Este método implica que el servidor envía actualizaciones del estado del juego a todos los clientes. Aunque es efectivo para mantener la coherencia, también presenta riesgos de seguridad, ya que los jugadores pueden modificar sus clientes para obtener información no autorizada sobre el estado del juego.</p>
+    <h3>2. Explotación de Vulnerabilidades:</h3>
+    <p>El artículo profundiza en cómo las arquitecturas de red pueden ser vulnerables a exploits que permiten a los jugadores obtener ventajas desleales. Se discuten dos tipos principales de exploits: <br>
+        <strong>Exploits del Lado del Cliente: </strong>Los jugadores pueden modificar sus clientes para alterar la forma en que se presenta la información del juego. Por ejemplo, en juegos como "Starcraft II", los jugadores pueden eliminar el efecto de "niebla de guerra", lo que les permite ver todo el mapa y obtener una ventaja estratégica. <br>
+        <strong>Exploits de Tiempo: </strong>Los jugadores pueden manipular los tiempos de entrada de sus acciones, lo que les permite ejecutar movimientos o ataques de manera más efectiva que lo que el juego debería permitir. Esto se puede lograr ajustando la hora del cliente o modificando las marcas de tiempo de las actualizaciones de entrada, lo que puede dar lugar a colisiones no detectadas y otros problemas de sincronización.</p>
+    <h3>3. Casos estudiados:</h3>
+    <p>El artículo presenta tres estudios de caso que ilustran los conceptos discutidos: <br>
+
+        <strong>"Risk of Rain 2": </strong>Este juego mostró cómo la combinación de efectos generados proceduralmente puede llevar a un comportamiento no intencionado que abruma a los clientes del juego, afectando su rendimiento. La falta de control sobre la generación de objetos puede resultar en una degradación significativa de la experiencia de juego. <br>
+        <strong>"Dead by Daylight": </strong>En este título, se demostró que los jugadores pueden manipular el acceso a los mensajes de actualización del cliente para obtener ventajas competitivas, como eludir ataques o moverse de manera no autorizada en el juego. <br>
+        <strong>"The Elder Scrolls Online": </strong>Este caso combinó aspectos de los dos anteriores, mostrando cómo las técnicas de cancelación de animación pueden aumentar drásticamente el tráfico de red y provocar quejas sobre el rendimiento del juego, especialmente en situaciones con muchos jugadores concurrentes.</p>
+
+        <br>
+        <center> <a class="btn btn-primary" href="index.html">Volver a la página principal</a></center>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
